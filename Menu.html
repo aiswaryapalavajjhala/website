@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+}
+
+.column img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: auto;
+
+}
+
+.responsive {
+  padding: 0 0px;
+  float: left;
+  width: 100%;
+}
+
+@media only screen and (max-width: 2000px) {
+  .responsive {
+    width: 100%;
+    margin: 0px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 0px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    margin: 0px 0;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 220px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.margin {
+  margin-right: 80px;
+  margin-left: 160px;
+  margin-top: 30px;
+}
+
+.margin1 {
+  margin-right: 50px;
+  margin-left: 350px;
+  margin-top: 10px;
+}
+
+.margin11 {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.margin12 {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
+.column1{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+}
+
+
+
+/*Filtering content */
+
+.filterDiv {
+  float: left;
+  display: none;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.container1 {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.sizing {
+  width:1250px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact {
+  height: 60px;
+  padding: 2px;
+  background-color:#EEEEED;
+}
+ 
+ body{
+background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sizing">
+
+<p align="center">
+<a href="https://aiswaryapalavajjhala.github.io/website/"><font size="4" color="black" face="helvetica"><b>Home</b></font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://aiswaryapalavajjhala.github.io/folio/About.html"><font size="4" color="black" face="helvetica"><b>About</b></font></a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#contact"><font size="4" color="black" face="helvetica"><b>Contact</b></font></a>
+</p>
+
+<! ––  Filters ––>
+
+<div class="margin1">
+<div id="myBtnContainer1">
+  <button class="btn active" onclick="filterSelection('all')">All</button>
+  <button class="btn" onclick="filterSelection('Architecture')">Architecture</button>
+  <button class="btn" onclick="filterSelection('Product design')">Product design </button>
+  <button class="btn" onclick="filterSelection('Research')">Research</button>
+  <button class="btn" onclick="filterSelection('Art & Photography')">Art & Photography</button>
+</div>
+</div>
+
+
+
+<div class="margin">
+
+<div class = "row"> <! ––  Row 1 ––>
+
+<div class="column1">
+
+<div class="responsive">
+    <div class="content">  
+        <div class="container">
+
+          <div class="container1">
+            <div class="filterDiv Research">
+              
+            <img src="https://drive.google.com/file/d/1vvQrYYpbUqjPYLpg3t0CPABGcYv5hQh-/view?usp=sharing" alt="MIT India Initiative" class="image">
+            <div class="overlay">
+            <div class="text">
+            <a href="https://aiswaryapalavajjhala.github.io/folio/page1.html">MIT India Initiative</a>
+            </div> 
+            </div>
+
+          </div> 
+        </div>
+
+       </div>
+    </div>
+ </div>
+
+</div>
+
+<div class="column1">
+
+  <div class="responsive">
+      <div class="content">  
+          <div class="container">
+           
+            <div class="container1">
+              <div class="filterDiv Research Architecture">
+
+              <img src="https://drive.google.com/file/d/1EAYgk4haZZROquEfHGm1eBN61u6OhNii/view?usp=sharing" alt="Energy efficient Shopping mall" class="image">
+              <div class="overlay">
+              <div class="text">
+              <a href="https://aiswaryapalavajjhala.github.io/folio/page2.html">Energy efficient Shopping mall</a>
+              </div> 
+              </div>
+
+            </div> 
+          </div>
+
+         </div>
+      </div>
+   </div>
+  
+  </div>
+
+
+  <div class="column1">
+
+    <div class="responsive">
+        <div class="content">  
+            <div class="container">
+             
+              <div class="container1">
+                <div class="filterDiv Research Architecture">
+
+                <img src="https://drive.google.com/file/d/1KAlJh724XJfGsJvwun6hZvxf6lMSJ5z9/view?usp=sharing" alt="Interconnect Transit Hub" class="image">
+                <div class="overlay">
+                <div class="text">
+                <a href="https://aiswaryapalavajjhala.github.io/website1/page3.html">Interconnect Transit Hub</a>
+                </div> 
+                </div>
+
+              </div> 
+            </div>
+
+           </div>
+        </div>
+     </div>
+    
+    </div>
+  
+  
+
+    <div class="column1">
+
+      <div class="responsive">
+          <div class="content">  
+              <div class="container">
+               
+                <div class="container1">
+                  <div class="filterDiv Architecture">
+
+                  <img src="https://drive.google.com/file/d/1r4j-xLQ6C7OSrAeNeFd0EYlJ9rxxANeK/view?usp=sharing" alt="Office design" class="image">
+                  <div class="overlay">
+                  <div class="text">
+                  <a href="https://aiswaryapalavajjhala.github.io/website1/page4.html">Office design</a>
+                  </div> 
+                  </div>
+
+                </div> 
+              </div>
+
+             </div>
+          </div>
+       </div>
+      
+      </div>
+      
+
+      <div class="column1">
+      
+        <div class="responsive">
+            <div class="content">  
+                <div class="container">
+                 
+                  <div class="container1">
+                    <div class="filterDiv Architecture">
+
+                    <img src="https://drive.google.com/file/d/1EPpu0vyq7nYzDL-L_n40F-VL6Zl4lPHZ/view?usp=sharing" alt="Residential Villa" class="image">
+                    <div class="overlay">
+                    <div class="text">
+                    <a href="https://aiswaryapalavajjhala.github.io/website1/page5.html">Residential Villa</a>
+                    </div> 
+                    </div>
+
+                  </div> 
+                </div>
+
+               </div>
+            </div>
+         </div>
+        
+        </div>
+      
+      
+        <div class="column1">
+      
+          <div class="responsive">
+              <div class="content">  
+                  <div class="container">
+
+                    <div class="container1">
+                      <div class="filterDiv Research Architecture">
+                   
+                      <img src="https://drive.google.com/file/d/1fNNYO6CNJrsV7fEdYvB7PypHiFwqmm_s/view?usp=sharing" alt="Logistic hub development" class="image">
+                      <div class="overlay">
+                      <div class="text">
+                      <a href="https://aiswaryapalavajjhala.github.io/website1/page6.html">Logistic hub development</a>
+                      </div> 
+                      </div>
+
+                    </div> 
+                  </div>
+
+                 </div>
+              </div>
+           </div>
+          
+          </div>
+
+
+
+
+  <div class="column1">
+
+    <div class="responsive">
+        <div class="content">  
+            <div class="container">
+             
+              <div class="container1">
+                <div class="filterDiv Architecture">
+
+                <img src="https://drive.google.com/file/d/1u1RyC0Epd8L-3ZuULQJyiAn4ZKVQwGZH/view?usp=sharing" alt="Facade design" class="image">
+                <div class="overlay">
+                <div class="text">
+                <a href="https://aiswaryapalavajjhala.github.io/website1/page7.html">Facade design</a>
+                </div> 
+                </div>
+
+              </div> 
+            </div>
+            
+           </div>
+        </div>
+     </div>
+    
+    </div>
+    
+    <div class="column1">
+    
+      <div class="responsive">
+          <div class="content">  
+              <div class="container">
+               
+                <div class="container1">
+                  <div class="filterDiv Research Product design">
+
+                  <img src="https://drive.google.com/file/d/12IrHjWo1dEAaPG8cOCxWq0S0QLyJCbbf/view?usp=sharing" alt="SRISTI-UNICEF" class="image">
+                  <div class="overlay">
+                  <div class="text">
+                  <a href="https://aiswaryapalavajjhala.github.io/website1/page8.html">SRISTI-UNICEF</a>
+                  </div> 
+                  </div>
+
+                </div> 
+              </div>
+
+             </div>
+          </div>
+       </div>
+      
+      </div>
+    
+    
+      <div class="column1">
+    
+        <div class="responsive">
+            <div class="content">  
+                <div class="container">
+
+                  <div class="container1">
+                    <div class="filterDiv Product design">
+                 
+                    <img src="https://drive.google.com/file/d/1nc4nVNgyV759yXAO5QW68S75vapH2yce/view?usp=sharing" alt="Flexible Spectacle frames" class="image">
+                    <div class="overlay">
+                    <div class="text">
+                    <a href="https://aiswaryapalavajjhala.github.io/website1/page9.html">Flexible Spectacle frames</a>
+                    </div> 
+                    </div>
+                  </div> 
+                </div>
+
+               </div>
+            </div>
+         </div>
+        
+        </div>
+
+  <div class="column1">
+
+    <div class="responsive">
+        <div class="content">  
+            <div class="container">
+
+              <div class="container1">
+                <div class="filterDiv Product design">
+             
+                <img src="https://drive.google.com/file/d/135TmkVlYyvRx0vPLNNZM1esQS7gcrCho/view?usp=sharing" alt="Modelling" class="image">
+                <div class="overlay">
+                <div class="text">
+                <a href="https://aiswaryapalavajjhala.github.io/website1/page10.html">Modelling</a>
+                </div> 
+                </div>
+
+              </div> 
+            </div>
+
+           </div>
+        </div>
+     </div>
+    
+    </div>
+    
+    <div class="column1">
+    
+      <div class="responsive">
+          <div class="content">  
+              <div class="container">
+
+                <div class="container1">
+                  <div class="filterDiv Architecture Product design Research">
+               
+                  <img src="https://drive.google.com/file/d/1xF_HxmWWlrbJy-URoLxtNykcD9-A-yqj/view?usp=sharing" alt="Flower Column" class="image">
+                  <div class="overlay">
+                  <div class="text">
+                  <a href="https://aiswaryapalavajjhala.github.io/website1/page11.html">Flower Column</a>
+                  </div> 
+                  </div>
+
+                </div> 
+              </div>
+
+             </div>
+          </div>
+       </div>
+      
+      </div>
+    
+    
+      <div class="column1">
+    
+        <div class="responsive">
+            <div class="content">  
+                <div class="container">
+
+                  <div class="container1">
+                    <div class="filterDiv Art & Photography">
+                 
+                    <img src="https://drive.google.com/file/d/1et8jHV0tAJHQn4tSIYeMRcr-tn2kmIRI/view?usp=sharing" alt="Art & Photography" class="image">
+                    <div class="overlay">
+                    <div class="text">
+                    <a href="https://aiswaryapalavajjhala.github.io/website1/page12.html">Art & Photography</a>
+                    </div> 
+                    </div>
+
+                  </div> 
+                </div>
+
+               </div>
+            </div>
+         </div>
+        
+        </div>
+
+</div>
+
+
+</div>
+ 
+<div class="margin12">
+<div id="contact">
+<p align="center">
+  <a href="https://www.linkedin.com/in/aiswarya-palavajjhala-a40b38103" target="_blank"><img id="myImg" class="myImg" src="https://drive.google.com/file/d/1RXRaik3o0Mf_JrmTk1HKG9-O7aL_pJ_i/view?usp=sharing" alt="Linkedin" width="30"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/unsungworld/" target="_blank"><img id="myImg" class="myImg" src="https://drive.google.com/file/d/1-UMQ0EMDDATV6ea9c0neH1ubSpM3HyNX/view?usp=sharing" alt="Instagram" width="30"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.facebook.com/aiswarya.palavajjhala"  target="_blank"><img id="myImg" class="myImg" src="https://drive.google.com/file/d/1-RY_wLcpf5bjBn0_xHeV5xdwHi9HWSDF/view?usp=sharing" alt="Facebook" width="30"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:aiswarya.iitkgp@gmail.com" target="_blank"><img id="myImg" class="myImg" src="https://drive.google.com/file/d/1qHWfnABQ3sclNNeOc6iP7YtmEbmAGq1U/view?usp=sharing" alt="Gmail" width="30"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://aiswaryapalavajjhala.github.io/website/" target="_blank"><img id="myImg" class="myImg" src="https://drive.google.com/file/d/1z1r427xdZE1xLXNjb9lv8ZEzR6fviEga/view?usp=sharing" alt="CV" width="30"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+</div>
+</div>
+
+<div class="margin11">
+<center>
+  <font size="2" color="black" face="helvetica">© 2020 by Aiswarya Palavajjhala</font>
+</center>
+</div>
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    }
+  }
+  
+  function AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer1 = document.getElementById("myBtnContainer1");
+  var btns = btnContainer1.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+
+
+</div>
+</body>
+</html>
